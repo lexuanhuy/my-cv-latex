@@ -1,0 +1,28 @@
+# LaTeX intermediate and output files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# PDF (optional — remove this line if you want to keep final CV.pdf)
+# *.pdf
+
+# Editor-specific files
+.vscode/
+*.swp
+*~
