@@ -56,6 +56,7 @@ cv-latex/
 
 ```bash
 pdflatex cv.tex
+# pdflatex cv.tex -jobname=LeXuanHuy_Frontend_CV
 #or
 latexmk -pdf cv.tex
 ```
