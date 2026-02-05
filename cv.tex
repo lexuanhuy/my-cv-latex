@@ -1,73 +1,77 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.75in]{geometry} % Thu hẹp lề một chút để có thêm không gian
+\usepackage[utf8]{inputenc}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{fontawesome5}
 \usepackage[hidelinks]{hyperref}
+\usepackage{array}
 
-\renewcommand{\familydefault}{\sfdefault}
-\titleformat{\section}{\bfseries\Large\uppercase}{\thesection}{1em}{}
-\setlist[itemize]{leftmargin=1.5em, itemsep=-4pt, topsep=1pt}
+% --- Font Setting ---
+% Sử dụng font Roboto hoặc Charter cho cảm giác cao cấp
+\usepackage[sfdefault]{roboto} 
+
+% --- Customize Section (Đây là bí kíp để CV "sang" hơn) ---
+\titleformat{\section}
+  {\large\bfseries\uppercase} % Font chữ tiêu đề
+  {}                          % Label
+  {0em}                       % Khoảng cách giữa label và tiêu đề
+  {}                          % Code đứng trước tiêu đề
+  [{\titlerule[0.8pt]}]       % Đường kẻ ngang ngay dưới tiêu đề
+
+\titlespacing*{\section}{0pt}{12pt}{8pt} % Chỉnh khoảng cách trên/dưới section
+
+% --- Customize List ---
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, topsep=2pt, parsep=0pt}
 
 \begin{document}
 
 % =====================
-% Header
+% Header (Phong cách Minimalist)
 % =====================
 \begin{center}
-    {\Huge \textbf{Le Xuan Huy}}\\[4pt]
-    Male
-    \hspace{0.1em}
-    -
-    \hspace{0.1em}
-    July 28, 1994 \\ [2pt]
-    No. 139/1, Da Nam Street, Ward 3, District 8, Ho Chi Minh City\\[2pt]
-    \faPhone*~0977221643 \quad 
-    \faEnvelope~\href{mailto:lexuanhuy1994@gmail.com}{lexuanhuy1994@gmail.com} \quad 
-    \faLink~\href{https://www.linkedin.com/in/huylx/}{https://www.linkedin.com/in/huylx/}
+    {\Huge \textbf{LE XUAN HUY}}\\[8pt]
+    \small
+    \faMars~Male \quad \faBirthdayCake~July 28, 1994 \quad \faMapMarker*~Ho Chi Minh City \\ [4pt]
+    \faPhone*~0977 221 643 \quad \faEnvelope~\href{mailto:lexuanhuy1994@gmail.com}{lexuanhuy1994@gmail.com} \quad \faLinkedin~\href{https://www.linkedin.com/in/huylx/}{linkedin.com/in/huylx}
 \end{center}
 
-\vspace{0.5em}
-\hrule
-\vspace{0.5em}
+\vspace{1em}
 
 % =====================
 % SUMMARY
 % =====================
 \section*{SUMMARY}
-I'm a Frontend developer with over 7 years of experience, over 1 year Frontend Lead and 4 years working as a Fullstack developer. Specialized in technologies such as ReactJS, TypeScript, Next.js, NodeJS, AntDesign, Tailwind CSS, MongoDB, and related tooling. Experienced in building management systems and developing dynamic, user-friendly websites that deliver scalable and efficient solutions for businesses.
+\begin{itshape}
+Senior Frontend Engineer with over 7 years of experience, including 1 year in technical leadership and 4 years as a Fullstack developer. Expert in building high-performance web applications using React.js, TypeScript, and the Next.js ecosystem. Proven track record in architecting scalable management systems and integrating AI-driven solutions to optimize development workflows. Passionate about delivering robust, user-centric products that drive business growth through modern technology and efficient system design.
+\end{itshape}
 
-\vspace{0.5em}
-\hrule
-\vspace{0.5em}
+\vspace{8pt}
 
 % =====================
 % EDUCATION
 % =====================
 \section*{EDUCATION}
-\noindent\textbf{Ho Chi Minh City Institute of Applied Science and Technology} \hfill 2012 -- 2015\\
-\textit{Major: Software Engineering}\\
-\textit{GPA: 3.11 / 4.0}
+\noindent\textbf{Ho Chi Minh City Institute of Applied Science and Technology (HIAST)} \hfill 2012 -- 2015\\
+\textit{College Degree in Information Technology} \hfill GPA: 3.1/4.0
 
-\vspace{0.5em}
-\hrule
-\vspace{0.5em}
+\vspace{8pt}
 
 % =====================
 % SKILLS
 % =====================
 \section*{SKILLS}
-\begin{tabular}{@{}ll}
-\textbf{Programming Languages} & - JavaScript, TypeScript \\
-\textbf{Frameworks/Libraries} & - ReactJS, NextJS, TailwindCSS, Ant Design, React Query, Jest,... \\
-\textbf{Databases}              & - PostgresSQL, MongoDB \\
-\textbf{Others}                 & - Experience with NodeJS, Express, Git, Linux, Docker \\ 
+\noindent
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+Programming & JavaScript (ES6+), TypeScript, PHP \\
+Frontend Stack & React, Next.js, React Query, Tailwind CSS, Ant Design \\
+Backend \& Database & Node.js, Express.js, Laravel, PostgreSQL, MongoDB \\
+DevOps \& Tools & Git, Docker, Linux, CI/CD basics \\
+Testing & Jest, React Testing Library
 \end{tabular}
 
-\vspace{0.5em}
-\hrule
-\vspace{0.5em}
+\vspace{8pt}
 
 % =====================
 % WORK EXPERIENCE
@@ -75,121 +79,77 @@ I'm a Frontend developer with over 7 years of experience, over 1 year Frontend L
 \section*{WORK EXPERIENCE}
 
 % --- GATLAS ---
-\noindent\textbf{GATLAS CO., LTD} \hfill \textbf{June 2025 -- Nov 2025}\\
-\textit{Senior Front-end Developer}\\[2pt]
-\textbf{Project:} Build Landing Page and Financial Product\\
-\textbf{- Description:} Developed landing pages and Financial Product integrated with AI.\\
-\textbf{- Technologies:} ReactJS, AI Prompting\\
-\textbf{- Responsibilities:}
+\noindent \textbf{GATLAS CO., LTD} \hfill \textbf{June 2025 -- Nov 2025} \\
+\textit{Senior Frontend Developer}
+
+\noindent \textbf{Project:} Build Landing Page and Financial Product \textit{(ReactJS, AI Prompting)}
 \begin{itemize}
-  \item Researched new AI tools to improve workflow efficiency.
-  \item Wrote and fine-tuned prompts in AI tools to build MVP products.
+    \item Developed AI-integrated financial products and landing pages, improving user engagement.
+    \item Researched and integrated new AI tools to automate workflow and increase development efficiency.
+    \item Authored and fine-tuned prompts to rapidly build and iterate MVP products.
 \end{itemize}
 
-\vspace{0.3em}
-\hrule
-\vspace{1.3em}
+\vspace{8pt} % Tạo khoảng cách giữa 2 công ty
 
 % --- WAREFLEX ---
-\noindent\textbf{WAREFLEX SEA COMPANY LIMITED} \hfill \textbf{May 2023 -- June 2025}\\
-\textit{Senior Front-end Developer / Technical Lead Front-end}\\[2pt]
-\textbf{Project:} OMS, WMS, TMS, Marketplace\\
-\textbf{- Description:} Built a management platform to connect customers with service providers.\\
-\textbf{- Technologies:} ReactJS, NextJS, Ant Design, TailwindCSS, NestJS, Jest, Sentry, ...\\
-\textbf{- Responsibilities:}
+\noindent \textbf{WAREFLEX SEA COMPANY LIMITED} \hfill \textbf{May 2023 -- June 2025} \\
+\textit{Senior Frontend Developer / Technical Lead Frontend}
 \begin{itemize}
-  \item Developed core UI components for the system.
-  \item Coordinated with departments to gather and clarify requirements.
-  \item Optimizing mono-repo source code improves performance and reduces bundle size by up to 30\%.
-  \item Mentored and supported team members.
+    \item \textbf{Project: OMS, WMS, TMS, Marketplace} (\textit{NextJS, ElectronJS, NestJS, Ant Design, Sentry})
+    \item Lead the Frontend team in building core UI components and system architecture for large-scale logistics platforms.
+    \item Optimized mono-repo source code, reducing total bundle size by 30\% and enhancing overall performance.
+    \item Developed a specialized desktop application using ElectronJS for integration with RFID printers and WMS.
+    \item Integrated an AI-driven Chatbot into the management platform to automate customer support and streamline internal inquiries.
+    \item Collaborated with cross-functional departments to refine requirements and ensure system scalability.
+    \item Mentored team members and implemented Jest/Sentry to maintain high system stability.
 \end{itemize}
 
-\vspace{0.3em}
-\hrule
-\vspace{1.3em}
+\vspace{8pt}
 
 % --- NEO PAYMENT ---
-\noindent\textbf{Neo Payment JSC} \hfill \textbf{Apr 2022 -- Mar 2023}\\
-\textit{Senior Front-end Developer}\\[2pt]
-\textbf{Project:} Merchant Portal, NeoX Portal\\
-\textbf{- Description:} Developed portal websites for merchants and internal operators. Developed a payment management website for customers.\\
-\textbf{- Technologies:} ReactJS, Ant Design, UmiJS, DvaJS\\
-\textbf{- Responsibilities:}
+\noindent \textbf{NEO PAYMENT JSC} \hfill \textbf{Apr 2022 -- Mar 2023} \\
+\textit{Senior Frontend Developer}
 \begin{itemize}
-  \item Researched UmiJS, DvaJS, and Ant Design to build reusable UI components.
-  \item Wrote unit tests, optimized code, and resolved issues identified by SonarQube.
+    \item \textbf{Project: Merchant Portal \& NeoX Portal} (\textit{ReactJS, Ant Design, UmiJS, DvaJS})
+    \item Developed and maintained portal websites for merchants and internal operators, ensuring high-performance payment management.
+    \item Engineered reusable UI components using UmiJS and Ant Design to standardize the Frontend architecture.
+    \item Improved code quality and resolved system vulnerabilities identified by SonarQube; implemented Unit Tests to ensure stability.
 \end{itemize}
 
-\vspace{0.3em}
-\hrule
-\vspace{1.3em}
+\vspace{8pt}
 
 % --- BOO TRADING ---
-\noindent\textbf{BOO Trading JSC} \hfill \textbf{May 2020 -- Feb 2021}\\
-\textit{Full-stack Developer}\\[2pt]
-\textbf{Project:} BOO Marketplace Website\\
-\textbf{- Description:} Developed an e-commerce platform for clothing and accessories.\\
-\textbf{- Technologies:} PHP Laravel, VueJS, MySQL, Redis, RabbitMQ\\
-\textbf{- Responsibilities:}
+\noindent \textbf{BOO TRADING JSC} \hfill \textbf{May 2020 -- Feb 2021} \\
+\textit{Fullstack Developer}
 \begin{itemize}
-  \item Built VueJS components for marketplace and admin websites.
-  \item Developed APIs to synchronize data with a third-party ERP system.
-  \item Used RabbitMQ for asynchronous operations (email notifications, ERP updates).
-  \item Used Redis for caching to improve performance.
-  \item Applied Jenkins for CI/CD build, deployment, and testing.
-  \item Mentored junior team members.
+    \item \textbf{Project: BOO Marketplace Website} (\textit{PHP Laravel, VueJS, MySQL, Redis, RabbitMQ, Jenkins})
+    \item Built an e-commerce platform for clothing and accessories, focusing on high-traffic marketplace and admin dashboard.
+    \item Developed robust APIs to synchronize real-time data with third-party ERP systems.
+    \item Optimized system performance by implementing Redis caching and RabbitMQ for asynchronous operations.
+    \item Established CI/CD pipelines using Jenkins for automated build, deployment, and testing.
 \end{itemize}
 
-\vspace{0.3em}
-\hrule
-\vspace{1.3em}
+\vspace{8pt}
 
 % --- AI PACIFIC ---
-\noindent\textbf{AI Pacific} \hfill \textbf{Jan 2018 -- May 2020}\\
-\textit{Full-stack Web Developer}\\[2pt]
-\textbf{Project:} Human Resource Management System\\
-\textbf{- Description:} Built internal applications for employee management.\\
-\textbf{- Technologies:} ReactJS, PHP, MySQL, Redis\\
-\textbf{- Responsibilities:}
+\noindent \textbf{AI PACIFIC} \hfill \textbf{Jan 2018 -- May 2020} \\
+\textit{Fullstack Web Developer}
 \begin{itemize}
-  \item Designed and implemented UI components for check-in/out, scheduling, and reporting.
-  \item Developed real-time APIs using SailsJS.
-  \item Maintained systems and supported data export requests.
-\end{itemize}
-\vspace{0.3em}
-\textbf{Project:} Hospital Information System\\
-\textbf{- Description:} Managed patient profiles, treatments, and billing.\\
-\textbf{- Technologies:} ReactJS, PHP, MySQL, Redis\\
-\textbf{- Responsibilities:}
-\begin{itemize}
-  \item Built UI components for payment and promotion modules.
-  \item Used Redis for data caching.
-  \item Maintained the system and supported data export for clients.
+    \item \textbf{Projects: HR Management System \& Hospital Information System} (\textit{ReactJS, ReactNative, PHP, MySQL, Redis, Socket.IO})
+    \item Designed and implemented core UI components for internal management applications and mobile applications.
+    \item Developed real-time APIs using SailsJS and optimized data export requests for large client datasets.
+    \item Maintained system integrity and provided technical support for complex healthcare and HR modules.
 \end{itemize}
 
-\vspace{0.3em}
-\hrule
-\vspace{1.3em}
+\vspace{8pt}
 
 % --- VNETWORK ---
-\noindent\textbf{VNETWORK JSC} \hfill \textbf{May 2015 -- Dec 2017}\\
-\textit{Junior Web Developer}\\[2pt]
-\textbf{Project:} Company Websites (vnetwork.vn, vncdn.vn)\\
-\textbf{- Description:} Upgraded and maintained company websites.\\
-\textbf{- Technologies:} PHP, JQuery, Twitter Bootstrap\\
-\textbf{- Responsibilities:}
+\noindent \textbf{VNETWORK JSC} \hfill \textbf{May 2015 -- Dec 2017} \\
+\textit{Junior Web Developer}
 \begin{itemize}
-  \item Converted PSD files to HTML and implemented new UIs.
-  \item Developed and maintained internal system features.
-\end{itemize}
-\vspace{0.3em}
-\textbf{Project:} Customer Websites\\
-\textbf{- Description:} Developed custom WordPress websites for clients.\\
-\textbf{- Technologies:} WordPress\\
-\textbf{- Responsibilities:}
-\begin{itemize}
-  \item Converted PSD designs to HTML and integrated into WordPress.
-  \item Customized WordPress features based on client requirements.
+    \item \textbf{Core Stack:} PHP, jQuery, Twitter Bootstrap, WordPress.
+    \item Converted PSD designs into pixel-perfect HTML/CSS and developed custom WordPress features based on client requirements.
+    \item Maintained and upgraded company websites (vnetwork.vn, vncdn.vn), ensuring cross-browser compatibility and SEO optimization.
 \end{itemize}
 
 \end{document}
