@@ -44,9 +44,9 @@ cv-latex/
 #### Steps:
 
 1. Open this folder in VS Code
-2. Open `cv.tex`
+2. Open `[name].tex`
 3. Press **Ctrl + Alt + B** (or click “Build LaTeX project” from the VS Code command palette)
-4. The generated file `cv.pdf` will appear in the same folder
+4. The generated file `[name].pdf` will appear in the same folder
 
 > ⚡ If LaTeX Workshop asks to install missing packages, just click **Install** — it’s safe.
 
@@ -55,10 +55,10 @@ cv-latex/
 ### 🧮 **Option 2 — Build from terminal**
 
 ```bash
-pdflatex cv.tex
-# pdflatex cv.tex -jobname=LeXuanHuy_SoftwareEngineer_CV
+pdflatex [name].tex
+# pdflatex LeXuanHuy_Frontend_CV.tex -jobname=LeXuanHuy_SoftwareEngineer_CV
 #or
-latexmk -pdf cv.tex
+latexmk -pdf [name].tex
 ```
 
 ---
@@ -67,4 +67,4 @@ latexmk -pdf cv.tex
 
 ---
 
-[[Download PDF]](https://github.com/lexuanhuy/my-cv-latex/blob/main/cv.pdf)
+[[Download PDF]](https://github.com/lexuanhuy/my-cv-latex/blob/main/LeXuanHuy_Frontend_CV.pdf)
