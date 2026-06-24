@@ -7,9 +7,14 @@
 \usepackage{fontawesome5}
 \usepackage[hidelinks]{hyperref}
 \usepackage{array}
+\usepackage[none]{hyphenat}
+
 
 % --- Font Setting ---
-\usepackage[sfdefault]{roboto} 
+% \usepackage[sfdefault]{roboto} 
+% \usepackage{ebgaramond}
+% \usepackage[sfdefault]{firans}
+% \usepackage{libertinus}
 
 % --- Customize Section ---
 \titleformat{\section}
@@ -27,7 +32,7 @@
 \begin{document}
 
 % =====================
-% Header (Modernized)
+% Header
 % =====================
 \begin{center}
     {\Huge \textbf{LE XUAN HUY}}\\[6pt]
@@ -39,22 +44,21 @@
 \vspace{0.5em}
 
 % =====================
-% SUMMARY (Grounded)
+% SUMMARY
 % =====================
 \section*{SUMMARY}
-{\itshape
-Software Engineer with 10 years of experience in software development, featuring 6 years of specialization in Frontend and 4 years as a Fullstack Engineer. Expert in the React and Next.js ecosystem, with a proven track record in designing scalable enterprise systems (OMS, WMS, TMS, \dots) and implementing AI-driven development workflows. Skilled at bridging the gap between complex technical requirements and high-performance, user-centric products. Adept at leading cross-functional teams and building robust, scalable architectures that support business growth.
+{
+Software Engineer with 6 years in Frontend and 4 years in Fullstack. Specialized in the React/Next.js ecosystem, with a proven track record in designing scalable enterprise systems built on Micro-frontends and modern architectures, combined with high-performance, interactive business UIs and smooth animations.
 }
 
 \vspace{4pt}
 
 % =====================
-% SKILLS (Reorganized)
+% SKILLS
 % =====================
 \section*{SKILLS}
-\noindent
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} p{12.2cm} }
-Programming & TypeScript, JavaScript, PHP \\
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} p{11.5cm} }
+Programming Languages & TypeScript, JavaScript, PHP \\
 Frameworks \& Libraries & React, Next.js, React Native, Express, Laravel, ElectronJS, Tailwind CSS, Ant Design, React Query \\
 Tools \& Others & Git, Docker, CI/CD, Sentry, Redis, PostgreSQL, MongoDB, Jest \\
 English & Basic Communication \\
@@ -68,77 +72,94 @@ English & Basic Communication \\
 \section*{WORK EXPERIENCE}
 
 % --- GATLAS ---
-\noindent \textbf{GATLAS CO., LTD} \hfill \textbf{June 2025 -- Nov 2025} \\
+\noindent \textbf{GATLAS CO. LTD} \hfill \textbf{June 2025 -- Nov 2025} \\
 \textit{Senior Frontend Developer}
 
-\noindent \textbf{Project:} AI-Driven Financial Products \textit{(ReactJS, AI Prompting)}
+\noindent \textbf{Project:} AI-Driven Financial Products | \textbf{Team size:} 4 \\
+\noindent \textbf{Technical Stack:} ReactJS, Tailwind CSS, AI Prompting
 \begin{itemize}
     \item Developed AI-integrated financial products and landing pages to improve user engagement.
-    \item Led the research and integration of new AI tools to automate internal workflows and increase development speed.
-    \item Created and fine-tuned specialized prompts to rapidly build and iterate MVP products.
+    \item Research and integration of new AI tools to automate internal workflows and increase development speed.
+    \item Created and fine-tuned specialized prompts to rapidly build and iterate products.
 \end{itemize}
 
 \vspace{8pt}
 
 % --- WAREFLEX ---
 \noindent \textbf{WAREFLEX SEA COMPANY LIMITED} \hfill \textbf{May 2023 -- June 2025} \\
-\textit{Senior Frontend Developer / Technical Lead Frontend}
+\textit{Senior Frontend Developer / Technical Lead Frontend} \\
+\noindent \textbf{Project:}  Logistics Ecosystem (OMS, WMS, TMS, Marketplace) | \textbf{Team size:} 12 \\
+\noindent \textbf{Technical Stack:} NextJS, ElectronJS, NestJS, React Native, Zustand, Tailwind CSS, Turborepo, AWS, MongoDB
 \begin{itemize}
-    \item \textbf{Project: Logistics Ecosystem (OMS, WMS, TMS, Marketplace)} (\textit{NextJS, ElectronJS, NestJS, React Native})
-    \item Led the Frontend team in designing core UI components and system architecture for large-scale logistics platforms.
+    \item Lead Frontend team in designing core UI components and system architecture for logistics ecosystem.
     \item Optimized source code and build pipelines, reducing bundle size and improving system performance.
-    \item Developed a desktop application using ElectronJS for hardware integration with RFID printers and WMS.
+    \item Developed a desktop application using ElectronJS for hardware integration with RFID printer.
+    \item Developed UI components for chatbot AI.
     \item Implemented an AI-driven Chatbot to automate customer support and streamline internal inquiries.
+    \item Developed transportation and warehouse applications using React Native to ensure cross-platform consistency.
     \item Collaborated with cross-functional departments to refine requirements and ensure system scalability.
-    \item Mentored team members and implemented Jest/Sentry to maintain high system stability.
+    \item Reviewed code and provided mentorship to junior developers.
+    \item Implemented Jest/Sentry to maintain high system stability.
 \end{itemize}
 
 \vspace{8pt}
 
 % --- NEO PAYMENT ---
 \noindent \textbf{NEO PAYMENT JSC} \hfill \textbf{Apr 2022 -- Mar 2023} \\
-\textit{Senior Frontend Developer}
+\textit{Senior Frontend Developer} \\
+\noindent \textbf{Project:} Fintech Portals | \textbf{Team size:} 20 \\
+\noindent \textbf{Technical Stack:} ReactJS, Ant Design, UmiJS, DvaJS, NodeJS, MongoDB
 \begin{itemize}
-    \item \textbf{Project: Fintech Portals} (\textit{ReactJS, Ant Design, UmiJS, DvaJS})
     \item Developed high-performance portal websites for merchants and operators for efficient payment management.
-    \item Created reusable UI components using UmiJS and Ant Design to standardize the Frontend architecture.
-    \item Improved code quality and resolved system vulnerabilities identified by SonarQube; implemented Unit Tests.
+    \item Created reusable UI components to standardize the Frontend architecture.
+    \item Developed KYC features to streamline user verification processes and enhance security.
+    \item Improved code quality, security and resolved system vulnerabilities identified by SonarQube.
 \end{itemize}
 
 \vspace{8pt}
 
 % --- BOO TRADING ---
 \noindent \textbf{BOO TRADING JSC} \hfill \textbf{May 2020 -- Feb 2021} \\
-\textit{Fullstack Developer}
+\textit{Fullstack Developer} \\
+\noindent \textbf{Project:} E-commerce Marketplace | \textbf{Team size:} 3 \\
+\noindent \textbf{Technical Stack:} Laravel, NuxtJS, MySQL, Redis, RabbitMQ, Jenkins
 \begin{itemize}
-    \item \textbf{Project: E-commerce Marketplace} (\textit{PHP Laravel, VueJS, MySQL, Redis, RabbitMQ})
-    \item Built an e-commerce platform for clothing, focusing on high-traffic marketplaces and admin dashboards.
+    \item Built an e-commerce platform for clothing, focusing on high-traffic marketplaces.
     \item Developed robust APIs to synchronize real-time inventory and sales data with third-party ERP systems.
     \item Improved system performance by implementing Redis caching and RabbitMQ for asynchronous tasks.
     \item Established CI/CD pipelines using Jenkins for automated build, testing, and deployment.
+    \item Mentored team members.
 \end{itemize}
 
 \vspace{8pt}
 
 % --- AI PACIFIC ---
 \noindent \textbf{AI PACIFIC} \hfill \textbf{Jan 2018 -- May 2020} \\
-\textit{Fullstack Web Developer}
+\textit{Fullstack Developer} \\
+\noindent \textbf{Projects:} HRMS \& Hospital Information Systems | \textbf{Team size:} 15 \\
+\noindent \textbf{Technical Stack:} ReactJS, React Native, Angular, PHP, MySQL, ASP.NET
 \begin{itemize}
-    \item \textbf{Projects: HRMS \& Hospital Information Systems} (\textit{ReactJS, ReactNative, PHP, MySQL})
     \item Developed core UI components and business logic for internal management and mobile healthcare applications.
+    \item Implemented micro-frontend using module federation.
+    \item Built and maintained RESTful APIs for HRMS and Hospital Information Systems.
     \item Built real-time APIs using SailsJS and optimized data processing for large healthcare datasets.
-    \item Maintained system integrity and provided technical support for complex healthcare and HR modules.
+    \item Built high availability and scalable systems to handle large datasets and concurrent users.
+    \item Processed excel data and integrated it into the system for HRMS and Hospital Information Systems.
+    \item Used ASP.NET and Angular to build hospital management systems for other clients.
 \end{itemize}
 
 \vspace{8pt}
 
 % --- VNETWORK ---
 \noindent \textbf{VNETWORK JSC} \hfill \textbf{May 2015 -- Dec 2017} \\
-\textit{Junior Web Developer}
+\textit{Junior Web Developer} \\
+\noindent \textbf{Projects:} WHMCS \& Outsourcing | \textbf{Team size:} 4 \\
+\noindent \textbf{Technical Stack:} PHP, jQuery, Bootstrap, WordPress
 \begin{itemize}
-    \item \textbf{Stack:} PHP, jQuery, Bootstrap, WordPress.
     \item Converted PSD designs into responsive web interfaces and developed custom WordPress features.
     \item Maintained and optimized company websites, ensuring cross-browser compatibility and SEO.
+    \item Maintained WHMCS-based web hosting management systems.
+    \item Outsourcing projects for clients, including e-commerce and corporate websites.
 \end{itemize}
 
 \vspace{8pt}
