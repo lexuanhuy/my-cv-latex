@@ -58,7 +58,7 @@ pdflatex [name].tex
 latexmk -pdf [name].tex
 ```
 
- <!-- pdflatex LeXuanHuy_Frontend_CV.tex -jobname=LeXuanHuy_SoftwareEngineer_CV -->
+ <!-- pdflatex CV_FrontendEngineer_LeXuanHuy.tex -jobname=CV_FrontendDeveloper_LeXuanHuy -->
 
 ---
 
@@ -66,4 +66,4 @@ Created by Le Xuan Huy — built in LaTeX using VS Code.
 
 ---
 
-[[Download PDF]](https://github.com/lexuanhuy/my-cv-latex/blob/main/LeXuanHuy_Frontend_CV.pdf)
+[[Download PDF]](https://github.com/lexuanhuy/my-cv-latex/blob/main/CV_FrontendEngineer_LeXuanHuy.pdf)
